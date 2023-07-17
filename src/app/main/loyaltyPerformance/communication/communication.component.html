@@ -1,0 +1,112 @@
+<div class="main-div">
+  <div class="row button-container">
+    <div class="col-md-2">
+      <img src="/assets/img/rotate_Reminder_bunny.gif" class="cashback-remd" width="250" height="250">
+     
+    </div>
+
+    <div class="col-md-8 d-flex flex-column">
+      <div class="header-cashback">
+        <div class="row">
+          <div class="col-md-2">
+            <button class="back-io-button" routerLink="/loyaltyPerformance/cashback-reminder">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+              Back
+            </button>
+          </div>
+          <div class="col-md-7">
+            <h5 class="edit-loyalty-text">Editing Loyalty Program !</h5>
+          </div>
+          <div class="col-md-3 text-end">
+            <button class="cssbuttons-io-button" (click)="onSubmit()"> Next
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <p>
+        <div class="progress">
+          <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+        </div>
+      <p>
+
+      <div class="inner-box">
+        <h5 class="com-text">For the best outcomes, it is recommended to use both options.</h5>
+        <div class="col-md-6 mt-3">
+          <div class="checkbox-wrapper-33 main-box">
+            <div class="row">
+              <div class="col-md-11">
+                <label class="checkbox">
+                  <input type="checkbox" class="checkbox__trigger visuallyhidden" id="emailCheckbox"
+                    name="communicationMethod" [(ngModel)]="LoyaltyEmail" [ngModelOptions]="{standalone: true}">
+                  <span class="checkbox__symbol">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                      class="icon-checkbox" aria-hidden="true">
+                      <path d="M4 14l8 7L24 7"></path>
+    
+                    </svg>
+                  </span>
+                  <label for="emailCheckbox">Email</label>
+                </label>
+              </div>
+
+              <div class="col-md-1">
+                <img src="/assets/img/icons8-mail-100.png" alt="smsicon" width="25" class="mr-2">
+               
+              </div>
+            </div>
+           
+          </div>
+        
+        </div>
+
+        <div class="col-md-6 mt-3">
+          <div class="input-container">
+            <div class="checkbox-wrapper-33 main-box">
+              <div class="row">
+                <div class="col-md-11">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="smsCheckbox"
+                      name="communicationMethod" [(ngModel)]="LoyaltySms" [ngModelOptions]="{standalone: true}">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+
+                      </svg>
+                    </span>
+                    <label for="emailCheckbox"> SMS</label>
+                  </label>
+                </div>
+                <div class="col-md-1">
+                  <img src="/assets/img/icons8-sms-100.png" alt="smsicon" width="25" class="mr-2">
+                 
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <img src="/assets/img/rotateReminder.gif" class="cashback-remd" width="250" height="250">
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,479 @@
+.main-div {
+  height: 100;
+}
+
+.text-campaign {
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 0.6rem;
+}
+
+.col-md-6 {
+  padding: 0px 12px;
+}
+
+.text-redeem {
+  font-size: 19px;
+  font-weight: 600;}
+
+.header-cashback {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgb(255 255 255 / 75%);
+}
+
+.cashback-img {
+  background-image: url('/assets/img/cashbackReminder.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 47rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.edit-loyalty-text {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8rem
+}
+
+.text-terms {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inner-box {
+  height: 100%;
+  margin-top: 0.8rem;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #fff;
+}
+
+.button-container {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main-box {
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 27rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+textarea.form-control {
+  min-height: calc(7.8rem + 0.75rem + 2px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.com-text {
+  margin-left: -13px;
+
+}
+
+.field-input {
+  border: none;
+  width: 28rem;
+}   
+
+.main-div {
+  height: 100;
+}
+
+.text-campaign {
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 0.6rem;
+}
+
+.col-md-6 {
+  padding: 0px 12px;
+}
+
+.text-redeem {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.header-cashback {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgb(255 255 255 / 75%);
+}
+
+.cashback-img {
+  background-image: url('/assets/img/cashbackReminder.jpg');
+  background-color: rgba(168, 56, 56, 0.5);
+  height: 47rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.edit-loyalty-text {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8rem
+}
+
+.text-terms {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.inner-box {
+  height: 100%;
+  margin-top: 0.8rem;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #fff;
+}
+
+.button-container {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main-box {
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+textarea.form-control {
+  min-height: calc(7.8rem + 0.75rem + 2px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.com-text {
+  margin-left: -13px;
+
+}
+
+.field-input {
+  border: none;
+  width: 28rem;
+}
+
+.box {
+  background-color: #ECECEC;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.theme-colors-container {
+  display: flex;
+}
+
+.theme-color {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.primary-color-picker-div {
+  margin-top: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.primary-color-picker {
+  border: 2px solid #fff;
+  box-shadow: 5px 6px 20px hsla(0, 0%, 48%, .42);
+  cursor: pointer;
+  height: 20px;
+  overflow: hidden;
+  width: 23px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.circle {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  color: var(--theme-color-blue);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--theme-color-blue);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  position: relative;
+
+}
+
+.card-img-top img {
+  width: 100%;
+  display: block;
+  height: 16rem;
+  border-radius: 10px;
+}
+
+.card-title {
+  padding: 52px 0 15px 0;
+}
+
+.white-card {
+
+  left: 0;
+  width: 100%;
+  /* height: 16rem; */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.white-card h5 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.terms-box {
+  border: 1px solid gray;
+  box-sizing: revert;
+  margin: 40px;
+}
+
+.big-box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form-group h1 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.partition-4 {
+  padding: 10px;
+}
+
+.partition-8 {
+  padding: 10px;
+}
+
+.partition-4 img {
+  width: 100%;
+  height: auto;
+}
+
+.checkbox-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.outer-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.inner-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.inner-box .form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.color {
+  height: 2.5rem;
+}
+
+.img-fluid {
+  object-fit: cover;
+}
+
+
+.terms-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+
+.cssbuttons-io-button {
+  background: var(--theme-color);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  /* box-shadow: inset 0 0 1.6em -0.6em ; */
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  width: 8rem;
+  border-radius: 3rem;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  /* width: 1.1em; */
+  transition: transform 0.3s;
+  color: var(--theme-color);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* back  */
+.back-io-button {
+  background: var(--theme-color);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* box-shadow: inset 0 0 1.6em -0.6em #714da6; */
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-left: 3.3em;
+  width: 8rem;
+  border-radius: 3rem;
+}
+
+.back-io-button .icon {
+  background: white;
+  /* margin-left: 1em; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius:2rem;
+  left: 0.3em;
+  transition: all 0.3s;
+  transform: rotate(180deg);
+}
+.back-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.back-io-button .icon svg {
+  transition: transform 0.3s;
+  color: var(--theme-color);
+}
+
+.back-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.col-md-5{
+  margin-top: 16px;
+}

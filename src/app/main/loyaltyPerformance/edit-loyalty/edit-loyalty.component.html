@@ -1,0 +1,263 @@
+<div class="main-div">
+    <div class="row">
+        <div class="col-md-7 mt-2">
+            <div class="header-cashback">
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="back-io-button" routerLink="/loyaltyPerformance">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            Back
+                        </button>
+                    </div>
+                    <div class="col-md-7">
+                        <h5 class="edit-loyalty-text">Editing Loyalty Program !</h5>
+                    </div>
+                    <div class="col-md-3 text-end">
+                        <button class="cssbuttons-io-button" (click)="onSubmit()"> Next
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+          
+            <p>
+            <div class="progress">
+                <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+            </div>
+            <p>
+            <div class="box scrollable-content">
+                <form action="#" enctype="multipart/form-data">
+                    <div class="form-group ">
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <div class="form-label">Header</div>
+                                <input type="text" class="form-control" id="headerInput" name="headerInput"
+                                    (keyup)="onHeaderText($event)" [(ngModel)]="HeaderText">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-label">Subtitle</div>
+                                <input type="text" class="form-control" id="subtitleInput" name="subtitleInput"
+                                    (keyup)="onSubTitleText($event)" [(ngModel)]="SubTitleText">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="form-label">Theme Color</div>
+                            <input type="color" class="form-control color" value="#282f44"
+                                (change)="IsThemeBgColor($event)">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-label">Text color</div>
+                            <input type="color" class="form-control color" value="#ffffff"
+                                (change)="IsThemeTextColor($event)">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="form-label">Curve primary color</div>
+                            <input type="color" class="form-control color" value="#ff1a51"
+                                (change)="IsAccentUpperColor($event)">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-label">Curve secondary color</div>
+                            <input type="color" class="form-control color" value="#b5002b"
+                                (change)="IsAccentLowerColor($event)">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h1>How do you want your customer to earn points ?</h1>
+                                <div class="big-box">
+                                    <div class="partition-4">
+                                        <img src="assets/img/loyaltyCashback.jpg" alt="Image">
+                                    </div>
+                                    <div class="partition-8">
+                                        <h5><b>Customer Earns</b></h5>
+                                        <div class="additional-field">
+                                            <input type="number" class="form-control" id="additionalFieldInput"
+                                                name="additionalFieldInput" placeholder="15% Cashback"
+                                                [(ngModel)]="CustomerEarn" [ngModelOptions]="{standalone: true}">
+                                        </div>
+                                    </div>
+                                    <div class="partition-8">
+                                        <div class="checkbox-wrapper-33">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__trigger visuallyhidden"
+                                                    id="checkbox4" name="checkbox4" (change)="OnAmountValue($event)">
+                                                <span class="checkbox__symbol">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1"
+                                                        viewBox="0 0 28 28" height="28px" width="28px"
+                                                        class="icon-checkbox" aria-hidden="true">
+                                                        <path d="M4 14l8 7L24 7"></path>
+                                                    </svg>
+                                                </span>
+                                                <label>Minimum Purchase for Cashback</label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="partition-8 pt-0" *ngIf="IsAmountCheck">
+                                        <h5><b>Amount</b></h5>
+                                        <div class="form-check ps-0">
+                                            <input class="form-control" type="number" [(ngModel)]="AmountNumber"
+                                                [ngModelOptions]="{standalone: true}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h1 class="terms-conditions">Terms & Conditions</h1>
+                                <div class="big-box">
+                                    <div class="outer-box">
+                                        <div class="inner-box terms-inner-box">
+                                            <div class="form-check ps-0 mb-0">
+                                                <textarea name="" id="" rows="4" style="width: 100%"
+                                                    [(ngModel)]="TermsText"
+                                                    [ngModelOptions]="{standalone: true}"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner-box terms-inner-box"
+                                            *ngFor="let terms of TermsAndConditions; let i=index">
+                                            <div class="checkbox-wrapper-33">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__trigger visuallyhidden"
+                                                        [(ngModel)]="terms.checked"
+                                                        [ngModelOptions]="{standalone: true}">
+                                                    <span class="checkbox__symbol">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1"
+                                                            viewBox="0 0 28 28" height="28px" width="28px"
+                                                            class="icon-checkbox" aria-hidden="true">
+                                                            <path d="M4 14l8 7L24 7"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <label>{{terms.name}}</label>
+                                                </label>
+                                            </div>
+                                           
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            
+                                <b>Logo</b><br>
+                                <label for="logoUpload" class="btn btn-primary">
+                                    <img src="assets/img/icons8-upload.png" alt="Upload Icon"> Upload logo
+                                    <input type="file" id="logoUpload" name="logoUpload" style="display: none;"
+                                        (change)="onFileChangeLogo($event)">
+                                </label>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="mb-4">
+                                    <b>Banner Image</b><br>
+                                    <label for="bannerUpload" class="btn btn-primary">
+                                        <img src="assets/img/icons8-upload.png" alt="Upload Icon"> Upload Custom photo
+                                        <input type="file" id="bannerUpload" name="bannerUpload" style="display: none;"
+                                            (change)="onFileChangeBanner($event)">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <img class="cursor" *ngFor="let img of BannerList; let i=index;" src="{{img.image}}"
+                            (click)="IsBannerImage(img)">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-5 mt-2" id="InnerHtml">
+            <div class="card" [ngStyle]="{'background-color': BgColor}">
+                <div class="card-img-top position-relative">
+
+                    <div class="circle">
+                        <p *ngIf="!LogoImageUrl">
+                            Upload Logo
+                        </p>
+                        <img src="{{LogoImageUrl}}" *ngIf="LogoImageUrl" style="width: 80%; height: 80%;"
+                            alt="Pizza Image" class="img-fluid">
+                    </div>
+                    <img src="{{BgImageUrl}}" alt="Pizza Image" class="img-fluid">
+                  
+                </div>
+                <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+                    <g transform="translate(-18.298844,-77.973964)">
+                        <path [ngStyle]="{'fill': AccentLower}"
+                            d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z">
+                        </path>
+                        <path [ngStyle]="{'fill': AccentUpper}"
+                            d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z">
+                        </path>
+                    </g>
+                </svg>
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size:30px;" [ngStyle]="{'color': TextColor}">{{HeaderText}}</h1>
+                    <p class="card-text" style="font-size:20px;" [ngStyle]="{'color': TextColor}">{{SubTitleText}}</p>
+
+
+                    <div class="card-text" style="font-size: 20px;" [ngStyle]="{'color': TextColor}">
+                        <span>Earn </span> <span
+                            style="font-weight: bold; font-size: 50px;">{{CustomerEarn}}%</span><br>
+
+                        <span style="font-size: 25px;" [ngStyle]="{'color': TextColor}"> Cashback</span><br>
+                        <span [ngStyle]="{'color': TextColor}" *ngIf="!IsAmountCheck">On any purchase</span>
+                        <span [ngStyle]="{'color': TextColor}" *ngIf="IsAmountCheck">On Minimum purchase of
+                            {{AmountNumber}}</span>
+                    </div>
+                </div>
+                <div class="white-card">
+                    <h5>Pay your next bill using the cashback you earned.</h5>
+                    <div class="terms-box">
+                        <p>Terms and Conditions:</p>
+                        <ul>
+                            <p *ngFor="let term of TermsAndConditions; let i=index">
+                                <span *ngIf="term.checked">
+                                    {{term.name}}
+                                </span>
+                            </p>
+                            <p>
+                                <span *ngIf="TermsText"> {{TermsText}} </span>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+    </div>
+</div>

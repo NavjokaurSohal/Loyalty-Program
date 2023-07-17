@@ -1,0 +1,192 @@
+<div class="main-div">
+  <div class="row button-container">
+    <div class="col-md-2 cash-back-rem">
+      <img src="/assets/img/rotate_Reminder_bunny.gif" class="cashback-remd" width="250" height="250">
+     
+    </div>
+    <div class="col-md-8">
+      <div class="header-cashback">
+        <div class="row">
+          <div class="col-md-2">
+            <button class="back-io-button" routerLink="/loyaltyPerformance/bonus">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+              Back
+            </button>
+          </div>
+          <div class="col-md-7">
+            <h5 class="edit-loyalty-text">Editing Loyalty Program !</h5>
+          </div>
+          <div class="col-md-3 text-end">
+            <button class="cssbuttons-io-button" (click)="onSubmit()"> Next
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p>
+      <div class="progress">
+        <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+      </div>
+      <p>
+
+      <div class="inner-box">
+        <div class="row">
+          <div class="col-md-1">
+            <div class="checkbox-wrapper-33">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__trigger visuallyhidden" id="reminderCheckbox"
+                  [(ngModel)]="CashbackReminder" [ngModelOptions]="{standalone: true}">
+                <span class="checkbox__symbol">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                    class="icon-checkbox" aria-hidden="true">
+                    <path d="M4 14l8 7L24 7"></path>
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-md-11">
+            <h5 class="point-text">Points Notification</h5>
+          </div>
+
+          <div class="mt-3" *ngIf="CashbackReminder">
+            <p>In case a customer hasn't made a purchase within a certain timeframe.</p>
+            <div class="input-group mt-3">
+              <div class="input-group mt-3">
+                <span class="input-group-text">Days</span>
+                <select class="form-select" aria-label="Days" [(ngModel)]="reminderValue"
+                  [ngModelOptions]="{standalone: true}">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group mt-3">
+              <span class="input-group-text">Duration</span>
+              <select class="form-select" aria-label="Duration" [(ngModel)]="reminderChoice"
+                [ngModelOptions]="{standalone: true}">
+                <option value="days" selected>Days</option>
+                <option value="weeks">Weeks</option>
+              </select>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-1">
+                <div class="checkbox-wrapper-33">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="eligibleCheckbox"
+                      [(ngModel)]="remindOnlyEligible" [ngModelOptions]="{standalone: true}">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-11">
+                <label class="form-check-label" for="eligibleCheckbox">
+                  Notify only eligible customers about their ability to redeem a reward.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row m-t-2">
+          <div class="col-md-1">
+            <div class="checkbox-wrapper-33">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__trigger visuallyhidden" [(ngModel)]="cashbackExpiryEnabled"
+                  [ngModelOptions]="{standalone: true}">
+                <span class="checkbox__symbol">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                    class="icon-checkbox" aria-hidden="true">
+                    <path d="M4 14l8 7L24 7"></path>
+                  </svg>
+                </span>
+              </label>
+            </div>
+          
+          </div>
+          <div class="col-md-11">
+            <h5 class="point-text">Points Usage Deadline Notification</h5>
+          </div>
+
+
+          <div class="mt-3" *ngIf="cashbackExpiryEnabled">
+            <p>Enable customers to personalize the expiration of their points and receive a notification 14 days before
+              the expiration date.</p>
+            <div class="input-group">
+              <p class="mr-2">Time gap from last buy</p>
+              <select class="form-select" aria-label="Months" [(ngModel)]="expiryMonths"
+                [ngModelOptions]="{standalone: true}">
+                <option value="1">1 Month</option>
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="4">4 Months</option>
+                <option value="5">5 Months</option>
+                <option value="6">6 Months</option>
+                <option value="7">7 Months</option>
+                <option value="8">8 Months</option>
+                <option value="9">9 Months</option>
+                <option value="10">10 Months</option>
+                <option value="11">11 Months</option>
+                <option value="12">12 Months</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 cash-back-rem">
+      <img src="/assets/img/rotateReminder.gif" class="cashback-remd" width="250" height="250">
+
+   
+    </div>
+  </div>
+</div>

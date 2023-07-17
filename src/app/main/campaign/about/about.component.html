@@ -1,0 +1,195 @@
+<div class="main-div">
+  <div class="row button-container col-md-12">
+    <div class="col-md-12 d-flex flex-column">
+      <div class="header-cashback">
+        <div class="row">
+          <div class="col-md-2">
+            <button class="back-io-button" routerLink="/campaign/channel">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+              Back
+            </button>
+          </div>
+          <div class="col-md-7">
+            <h5 class="edit-loyalty-text">What are the main goals or intentions of the campaign?</h5>
+          </div>
+          <div class="col-md-3 text-end">
+            <button class="cssbuttons-io-button" routerLink="/campaign/terms"> Next
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="progress">
+        <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inner-box ">
+              <h5 class="com-text">Type of Incentive</h5>
+              <div class="col-md-6 mt-3">
+                <div class="checkbox-wrapper-33 main-box">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="redeemCheckbox1"
+                      name="communicationMethod" (change)="toggleCheckbox('field1')">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+                      </svg>
+                    </span>
+                    <label for="redeemCheckbox1">Apply <b>%</b> discount</label>
+                  </label>
+                </div>
+              </div>
+
+              <div *ngIf="activeField === 'field1'" class="mt-3">
+                <input type="number" class="form-control" [(ngModel)]="purchaseValue1"
+                  [placeholder]="'Enter purchase value ' + discountedText">
+                <div class="mt-3">
+                  <button class="btn btn-primary m-t-2" (click)="enterPurchase('field1')">Entire Purchase</button>
+                  <button class="btn btn-primary m-t-2" (click)="specificPurchase('field1')">Specific Purchase</button>
+                </div>
+                <div *ngIf="showDiscountedValue" class="ml-2">
+                  <label>{{ purchaseValue1 }}% Off</label>
+                </div>
+
+                <div *ngIf="showSpecificPurchase" class="mt-3">
+                  <input type="text" class="form-control" placeholder="Starters">
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="checkbox-wrapper-33 main-box">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="redeemCheckbox2"
+                      name="communicationMethod" (change)="toggleCheckbox('field2')">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+                      </svg>
+                    </span>
+                    <label for="redeemCheckbox2">Apply <b>₹</b> Discount</label>
+                  </label>
+                </div>
+              </div>
+              <div *ngIf="activeField === 'field2'" class="mt-3">
+                <input type="number" class="form-control" [(ngModel)]="purchaseValue2"
+                  placeholder="Enter purchase value">
+                <div class="mt-3">
+                  <button class="btn btn-primary m-t-2" (click)="enterPurchase('field2')">Enter Purchase</button>
+                  <button class="btn btn-primary m-t-2" (click)="specificPurchase('field2')">Specific Purchase</button>
+                </div>
+
+                <div *ngIf="showDiscountedValue2" class="ml-2">
+                  {{ purchaseValue2 }}% Off
+                </div>
+
+                <div *ngIf="showSpecificPurchase2" class="mt-3">
+                  <input type="text" class="form-control" placeholder="Starters">
+                </div>
+              </div>
+          
+              <div class="col-md-6 mt-3">
+                <div class="checkbox-wrapper-33 main-box">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="redeemFreeItemCheckbox"
+                      name="communicationMethod" (change)="toggleCheckbox('field3')">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+                      </svg>
+                    </span>
+                    <label for="redeemFreeItemCheckbox">Apply a Free Item</label>
+                  </label>
+                </div>
+              </div>
+              <div *ngIf="activeField === 'field3'" class="mt-3">
+                <input type="text" class="form-control" [(ngModel)]="yourBill"
+                  placeholder="Add things you can give for free">
+              </div>
+
+              <div class="col-md-6 mt-3">
+                <div class="checkbox-wrapper-33 main-box">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__trigger visuallyhidden" id="noDiscountCheckbox"
+                      name="communicationMethod" (change)="toggleCheckbox('field4')">
+                    <span class="checkbox__symbol">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px"
+                        class="icon-checkbox" aria-hidden="true">
+                        <path d="M4 14l8 7L24 7"></path>
+                      </svg>
+                    </span>
+                    <label for="noDiscountCheckbox">No Discount</label>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <div class="campaign-fields">
+             
+                  <div class="col-md-12 mt-3">
+                    <label for="campaignTitle" class="campaign-title">Campaign Title</label>
+                    <input type="text" class="form-control" id="campaignTitle" [(ngModel)]="campaignTitle"
+                      placeholder="Write campaign title">
+                  </div>
+             
+                  <div class="col-md-12 mt-3">
+                    <label for="campaignDescription" class="campaign-title">Campaign Description</label>
+                    <textarea class="form-control" id="campaignDescription" [(ngModel)]="campaignDescription"
+                      placeholder="Write campaign subtitle"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 inner-box d-flex justify-content-center align-items-center" id="InnerHtml">
+            <div class="card" [ngStyle]="{'background-color': BgColor}">
+              <div class="card-img-top position-relative">
+                <div class="circle">
+                  <p *ngIf="!LogoImageUrl">
+                    Upload Logo
+                  </p>
+                  <img src="{{LogoImageUrl}}" *ngIf="LogoImageUrl" style="width: 80%; height: 80%;"
+                            alt="Pizza Image" class="img-fluid">
+                </div>
+                <img src="{{BgImageUrl}}" alt="Pizza Image" class="img-fluid">
+              </div>
+              <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+                <g transform="translate(-18.298844,-77.973964)">
+                  <path [ngStyle]="{'fill': AccentLower}"
+                    d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z">
+                  </path>
+                  <path [ngStyle]="{'fill': AccentUpper}"
+                    d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z">
+                  </path>
+                </g>
+              </svg>
+              <div class="card-body">
+                <h1 class="card-title" style="font-size:30px;" [ngStyle]="{'color': TextColor}">{{campaignTitle}}</h1>
+                <p class="card-text" style="font-size:20px;" [ngStyle]="{'color': TextColor}">{{campaignDescription}}</p>
+              </div>              
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

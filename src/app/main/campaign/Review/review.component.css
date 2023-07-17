@@ -1,0 +1,181 @@
+.main-div {
+  height: 100;
+}
+
+.col-md-6 {
+  padding: 0px 12px;
+ 
+}
+
+.h-theme{
+  height: 38rem !important;
+  padding: 32px;
+}
+
+.header-cashback {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgb(255 255 255 / 75%);
+}
+
+.inner-box{
+  margin-top: 0.5rem;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #fff;
+}
+
+.edit-loyalty-text {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.button-container {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main-box {
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+
+.box {
+  margin-top: 0.5rem;
+  background-color: #ECECEC;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.circle {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  color: var(--theme-color-blue);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--theme-color-blue);
+  border-radius: 10px;
+  width: 58%;
+  margin-bottom: 0 !important;
+}
+
+
+.card-body{
+  height: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-img-top {
+  position: relative;
+  height: 12rem;
+}
+.card-img-top img {
+  width: 100%;
+  display: block;
+  height: 22.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-text {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.white-card {
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.white-card h5 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.terms-box {
+  border: 1px solid gray;
+  box-sizing: revert;
+  margin: 32px;
+}
+
+.form-group h1 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.color {
+  height: 2.5rem;
+}
+
+.img-fluid {
+  object-fit: cover;
+}
+
+.btn-primary {
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.ml-1 {
+  margin-left: 0.8rem;
+}

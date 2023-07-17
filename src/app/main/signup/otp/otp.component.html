@@ -1,0 +1,39 @@
+
+<div class="container-fluid">
+    <div class="address-wrap">
+        <div class="btn-back-alignment">
+            <button type="button" class="btn btn-alignment" routerLink="/signup">
+                <img height="18px" width="18px" class="img-align" src="/assets/img/arrow-left.svg" alt="btn-icon"
+                    style="margin-right: 5px;">
+                Back </button>
+
+            <div class="container height-100 d-flex justify-content-center align-items-center">
+                <div class="card p-2 text-center otp-card">
+                    <div class="row text-center">
+                        <div class="welcome-card">
+                            <div class="col-md-3">
+                                <img alt="Insights"
+                                    src="/assets/img/Otp-mobile-girl.jpg"
+                                    width="100%" height="100%">
+                            </div>
+                            <div class="col-md-9">
+                                <h3>We have sent you a one time password to verify your account, on this <b>Mobile
+                                    number <br>
+                                    {{PhoneNumber}}</b></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                        <ngx-otp-input [config]="otpInputConfig"
+                            (fill)="handleFillEvent($event)"></ngx-otp-input>
+                    </div>
+                    <p>Didn't receive OTP on mobile? {{display}} 
+                        <span *ngIf="!resendOtp" (click)="ResendOtp(1)" class="cursor">Resend in</span> 
+                        <span *ngIf="resendOtp">Resend in</span> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

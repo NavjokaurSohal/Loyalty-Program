@@ -1,0 +1,57 @@
+<div class="campaign text-center">
+    <div class="campaign-body" routerLink="/campaign/channel">
+      <img src="/assets/img/icons8-plus-100.png" alt="plusicon" width="40">
+      <!-- <i class="bi bi-plus-square-fill" ></i> -->
+      <h5 class="campaign-title">Start from Scratch</h5>
+  
+    </div>
+  </div>
+
+
+  <div class="card-container">
+    <div id="cardsContainer" class="card-row">
+        <div *ngFor="let data of cardData; let i = index" class="my-card">
+          <div class="image-container">
+            <div class="menu-button">
+              <button class="btn btn-primary" (click)="toggleMenu(i)">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="menu-content" *ngIf="showMenu[i]">
+                <button class="btn btn-secondary">Edit Campaign</button>
+                <button class="btn btn-danger">Delete Campaign</button>
+              </div>
+            </div>
+            <img [src]="data.imageSrc" alt="Card Image" class="card-image">
+            <div class="overlay-content">
+              <h5 class="card-title">{{ data.text }}</h5>
+              <i [class]="data.iconClass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+
+    <div class="card-container">
+      <div id="cardsContainer" class="card-row">
+           <div *ngFor="let data of cardData1; let i = index" class="my-card">
+            <div class="image-container">
+              <div class="menu-button">
+                <button class="btn btn-primary" (click)="toggleMenu(i)">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <div class="menu-content" *ngIf="showMenu[i]">
+                  <button class="btn btn-secondary">Edit Campaign</button>
+                  <button class="btn btn-danger">Delete Campaign</button>
+                </div>
+              </div>
+              <img [src]="data.imageSrc" alt="Card Image" class="card-image">
+              <div class="overlay-content">
+                <h5 class="card-title">{{ data.text }}</h5>
+                <i [class]="data.iconClass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    
+  

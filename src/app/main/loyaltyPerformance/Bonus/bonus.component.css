@@ -1,0 +1,276 @@
+
+
+
+.text-right {
+  text-align: right;
+  /* margin-bottom: 0.3rem; */
+}
+
+.bonus-cash-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bonus-text-img {
+  background-image: url('/assets/img/cashbackReminder.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 47rem;
+  background-size: cover;
+  background-position: center;
+  /* margin-left: 1rem; */
+  border-radius: 10px;
+  /* width:42.4rem;  */
+}
+.col-md-6 {
+  padding: 0px 12px;
+  }
+h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
+.text-center {
+  margin-left: 10rem;
+}
+
+.enable-cash {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  color: var(--theme-color);
+}
+
+.m-text-0 {
+  margin: 5rem 0 0 5rem;
+}
+
+.step-text {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.box {
+  border-radius: 10px;
+  /* text-align: center; */
+  padding: 1rem;
+  /* margin: 0.5rem; */
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9bd;
+  z-index: 10;
+}
+
+.box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.box p {
+  font-size: 16px;
+  margin-top: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.paragraph-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 3rem;
+  /* background-color: #ECECEC; */
+  background-color: #ececec91;
+  border-radius: 2px;
+}
+
+.inner-box {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 1; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #fff;
+  /* margin-top: 1rem; */
+}
+
+.text-align {
+  text-align: left !important;
+}
+
+.paragraph-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 10.2); */
+}
+
+.cashback-field {
+  display: none;
+}
+
+#cashbackCheckbox {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.input {
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  width: 55%;
+  border-radius: 10px;
+  padding-left: 10px;
+  /* border: 1px solid var(--theme-color);  */
+  border: 1px solid var(--theme-color);
+  outline: none;
+}
+
+.input:focus {
+  border: 3px solid var(--theme-color);
+  -webkit-transition: 0.1s;
+  transition: 0.5s;
+}
+#cashbackCheckbox:checked~.cashback-field {
+  display: block;
+}
+
+#cashbackInput {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  color: black;
+  width: 60%;
+  border: none;
+}
+
+#cashbackEnable{
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  width: 60%;
+  /* border: 2px solid #ddd; */
+  /* border: none; */
+}
+
+.header-bonus {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem;
+  /* margin-bottom: 0.5rem; */
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgb(255 255 255 / 75%);
+  z-index: 10;
+}
+
+.edit-loyalty-text {
+  /* font-size: 20px;
+  font-weight: 700; */
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 13px;
+}
+
+
+.form-select:focus {
+  border-color:var(--theme-color) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem var(--theme-color) !important;
+  border-radius: 10px;
+}
+
+.form-check-input:focus {
+  border-color:var(--theme-color) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem var(--theme-color) !important;
+}
+
+.form-check-input:checked {
+  background-color:var(--theme-color) !important;
+  border-color:var(--theme-color) !important;
+}
+
+.form-check-label {
+  font-weight: bold;
+}
+
+.input-group-text {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+}
+
+
+.form-select {
+  border-radius: 5px;
+  border-color: #ddd;
+}
+
+.form-check-input[type="checkbox"] {
+  margin-top: 5px;
+  margin-left:0
+}
+
+.form-check-input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+.form-check-input:checked ~ .outer-box .reminder-inputs {
+  display: block;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.button-container {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  background-color: #ECECEC;
+  color: black;
+  border: none;
+  margin-right: 30rem;
+}
+
+.btn-primary {
+  background-color: var(--theme-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--theme-color-blue);
+}

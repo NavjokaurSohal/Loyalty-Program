@@ -1,0 +1,120 @@
+.row {
+    margin: 0! important;
+}
+
+.input-group {
+    display: block;
+    width: 100%;
+
+}
+
+.cashback-girl-image{
+    width: 50%;
+    margin-left: 6rem;
+}
+
+.m-t-0 {
+    margin-top: 1rem;
+    font-size: 19px;
+    font-weight: 600;
+}
+.f-hello {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.btn-close {
+    width: 1rem !important;
+    background-color: #dce5e5;
+    border-radius: 50px;
+    padding: 4px;
+    vertical-align: top;
+
+}
+
+.fs-5 {
+    font-weight: 700 !important;
+    text-align: left !important;
+}
+span{
+    color: var(--theme-color);
+}
+
+.text-center{
+    text-align: center !important;
+    color: var(--theme-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 8rem;
+}
+
+.m-l-3{
+    margin-left: 10rem;
+}
+
+.P-card-set {
+    margin-top: 5rem !important;
+}
+
+.m-t-1-0{
+    margin-top: 0.5rem;
+}
+
+.cashback-card-set{
+    margin-top: 5rem !important;
+}
+
+.btn-submit{
+    width: 100%;
+}
+
+.inner-box {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button-container {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .button-container button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: #ececec;
+    color: black;
+    border: none;
+    margin-right: 30rem;
+  }
+  .header-cashback {
+    position: -webkit-sticky;
+    position: sticky;
+   margin-top: 20px;
+    width: 99%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    backdrop-filter: saturate(200%) blur(1.875rem);
+    background-color: rgb(255 255 255 / 75%);
+  }
+.flex-column{
+    margin-top: 30px;
+}
+.img{
+    margin-top: 80px;
+}

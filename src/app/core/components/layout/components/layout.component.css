@@ -1,0 +1,7 @@
+.main_content {
+    padding-left: 19rem;
+    width: 100%;
+    /* padding-top: 5.5rem !important; */
+    transition: .5s;
+    position: relative;
+}

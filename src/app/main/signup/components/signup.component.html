@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="address-wrap">
+    <div class="container height-100 d-flex justify-content-center align-items-center">
+      <div class="card ">
+        <div class="row text-center">
+          <div class="welcome-card">
+            <div class="col-md-3">
+              <img alt="Insights" src="/assets/img/punjabiSardar-removebg-preview-removebg-preview.png" width="80%"
+                height="80%">
+            </div>
+            <div class="col-md-9">
+              <h3>Ready to grow your business? <br>
+                We'll help you get started for free.</h3>
+            </div>
+          </div>
+
+        </div>
+        <form class="pt-3" [formGroup]="signupForm">
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="pb-2">
+                <h3 class="f-brand">Full Name</h3>
+                <input type="text" placeholder="Enter Full Name" class="form-control" formControlName="full_name"
+                  [ngClass]="{ 'is-invalid': submitted && myForm.full_name.errors }">
+                <div *ngIf="submitted && myForm.full_name.errors" class="invalid-feedback">
+                  <div *ngIf="myForm.full_name.errors.required">Full Name is required</div>
+                </div>
+              </div>
+
+              <div class="pb-2">
+                <h3 class="f-brand">Email</h3>
+                <input type="email" placeholder="Enter Email" formControlName="email" class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && myForm.email.errors }" />
+                <div *ngIf="submitted && myForm.email.errors" class="invalid-feedback">
+                  <div *ngIf="myForm.email.errors.required">Email is required</div>
+                  <div *ngIf="myForm.email.errors.email">Email must be a valid email address
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="pb-2">
+                <h3 class="f-brand">Mobile Number</h3>
+                <input type="number" placeholder="Enter Mobile Number" class="form-control" formControlName="phone"
+                  [ngClass]="{ 'is-invalid': submitted && myForm.phone.errors }">
+                <div *ngIf="submitted && myForm.phone.errors" class="invalid-feedback">
+                  <div *ngIf="myForm.phone.errors.required">Mobile Number is required</div>
+                </div>
+              </div>
+
+              <div class="pb-2">
+                <h3 class="f-brand">Password</h3>
+                <input type="password" placeholder="Enter Password" class="form-control" formControlName="password"
+                  [ngClass]="{ 'is-invalid': submitted && myForm.password.errors }">
+                <div *ngIf="submitted && myForm.password.errors" class="invalid-feedback">
+                  <div *ngIf="myForm.password.errors.required">Password is required</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <a class="btn btn-primary btn-submit m-t-1" href="javascript:void(0)" (click)="onSubmit()">Sign Up
+                <img src="../../../../../assets/img/loader.gif" *ngIf="loading" style="width: 20px; height: 20px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mt-2 p-0">
+              <label>Already have an account?<span class="otp-text" routerLink="/signin">Sign In</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="terms-conditions">
+                <h3 class="P-signup">By Signing Up, you agree that you've read and accepted our <span>privacy policy</span> and
+                  <span>Terms
+                    of services.</span></h3>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

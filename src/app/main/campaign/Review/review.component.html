@@ -1,0 +1,147 @@
+<div class="main-div">
+    <div class="row button-container col-md-12">
+        <div class="col-md-12 d-flex flex-column">
+            <div class="header-cashback">
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="back-io-button" routerLink="/campaign/terms">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            Back
+                        </button>
+                    </div>
+                    <div class="col-md-7">
+                        <h5 class="edit-loyalty-text">Review Campaign Creative</h5>
+                    </div>
+                    <div class="col-md-3 text-end">
+                        <button class="cssbuttons-io-button" routerLink="/campaign/reviewSMS"> Next
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+<div class="progress">
+    <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+  </div>
+
+
+<div class="container ps-0">
+    <div class="row">
+        <div class="col-md-6" >
+            <div class="inner-box h-theme">
+                <form action="#" enctype="multipart/form-data">
+                    <div class="row mb-2">
+                        <div class="col-md-8">
+                            <div class="form-label">Theme Color</div>
+                            <input type="color" class="form-control color" value="#282f44"
+                                (change)="IsThemeBgColor($event)">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-8">
+                            <div class="form-label">Text color</div>
+                            <input type="color" class="form-control color" value="#ffffff"
+                                (change)="IsThemeTextColor($event)">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-8">
+                            <div class="form-label">Curve primary color</div>
+                            <input type="color" class="form-control color" value="#ff1a51"
+                                (change)="IsAccentUpperColor($event)">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-8">
+                            <div class="form-label">Curve secondary color</div>
+                            <input type="color" class="form-control color" value="#b5002b"
+                                (change)="IsAccentLowerColor($event)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <div class="mb-4"> -->
+                                <b>Logo</b><br>
+                                <label for="logoUpload" class="btn btn-primary">
+                                    <img src="assets/img/icons8-upload.png" alt="Upload Icon"> Upload logo
+                                    <input type="file" id="logoUpload" name="logoUpload" style="display: none;"
+                                        (change)="onFileChangeLogo($event)">
+                                </label>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="mb-4">
+                                    <b>Banner Image</b><br>
+                                    <label for="bannerUpload" class="btn btn-primary">
+                                        <img src="assets/img/icons8-upload.png" alt="Upload Icon"> Upload Custom photo
+                                        <input type="file" id="bannerUpload" name="bannerUpload" style="display: none;"
+                                            (change)="onFileChangeBanner($event)">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <img class="cursor" *ngFor="let img of BannerList; let i=index;" src="{{img.image}}"
+                            (click)="IsBannerImage(img)">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6 inner-box d-flex justify-content-center align-items-center" id="InnerHtml">
+            <div class="card" [ngStyle]="{'background-color': BgColor}">
+                <div class="card-img-top position-relative">
+                    <div class="circle">
+                        <p *ngIf="!LogoImageUrl">
+                            Upload Logo
+                        </p>
+                        <img src="{{LogoImageUrl}}" *ngIf="LogoImageUrl" style="width: 80%; height: 80%;"
+                            alt="Pizza Image" class="img-fluid">
+                    </div>
+                    <img src="{{BgImageUrl}}" alt="Pizza Image" class="img-fluid">
+                </div>
+                <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+                    <g transform="translate(-18.298844,-77.973964)">
+                        <path [ngStyle]="{'fill': AccentLower}"
+                            d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z">
+                        </path>
+                        <path [ngStyle]="{'fill': AccentUpper}"
+                            d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z">
+                        </path>
+                    </g>
+                </svg>
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size:30px;" [ngStyle]="{'color': TextColor}">{{HeaderText}}</h1>
+                    <p class="card-text" style="font-size:20px;" [ngStyle]="{'color': TextColor}">{{SubTitleText}}</p>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

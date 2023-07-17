@@ -1,0 +1,89 @@
+
+ .container {
+    margin-top: 43px;
+  }
+ 
+  
+  .card-header {
+    background-color: #f8f9fa;
+   border-radius:10px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 26px;
+   
+    color: black;
+  }
+  .title {
+     font-size: 20px;
+    
+  }
+  
+  
+  .card {
+     margin-bottom: 20px;
+     border-radius: 20px;
+     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.3);
+     background-color: ivory;
+  }
+  .card1 {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.3);
+    background-color: ivory;
+ }
+ 
+ .row{
+     margin-top:4rem;
+ }
+ 
+  
+  .table {
+    margin-bottom: 0;
+  }
+  
+  .table th {
+    font-weight: 600;
+    border-top: none;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  
+  .table>:not(:first-child) {
+    border-top: 0px solid currentColor;
+ }
+  .author-name {
+    font-weight: 600;
+  }
+  
+  .function {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+  
+  
+  .employed-date a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+ 
+  

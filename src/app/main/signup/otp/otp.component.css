@@ -1,0 +1,102 @@
+
+
+span {
+  color: var(--theme-color);
+  margin-right: 0.3rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.otp-card{
+  background-image: url('/assets/img/themeOtpBG.jpg');
+  margin-top: 10rem;
+}
+
+
+.container-fluid {
+  padding: 0;
+}
+
+.container {
+  height: 90%;
+}
+
+.btn-alignment {
+  margin-top: 1.7rem !important;
+}
+
+.img-align {
+  background: var(--theme-color-light);
+  border-radius: 10px;
+  /* color: #fff; */
+  height: 20px;
+  width: 20px;
+}
+
+.welcome-card {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1vh auto 0;
+  max-width: 460px;
+  padding: 10px;
+}
+
+
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+}
+.address-wrap {
+  background-image: url('/assets/img/businessBG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.a-business {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto 0;
+  max-width: 455px;
+  padding: 16px;
+}
+
+.card {
+  box-shadow: 0px 5px 20px 0px #d2dae3;
+  z-index: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 20px !important;
+}
+
+.m-t-0 {
+  margin-top: 10vh;
+}
+
+.loyalty-text {
+  font-size: 50px;
+  font-weight: 900;
+  padding: 5px;
+  color: var(--theme-color);
+}
+
+.f-business {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.f-brand {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left !important;
+}
+
+.p-2 {
+  padding: 10px;
+}

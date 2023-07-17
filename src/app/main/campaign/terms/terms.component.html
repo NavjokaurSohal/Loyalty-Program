@@ -1,0 +1,254 @@
+<div class="main-div">
+  <div class="row button-container col-md-12">
+    <div class="col-md-12 d-flex flex-column">
+      <div class="header-cashback">
+        <div class="row">
+          <div class="col-md-2">
+            <button class="back-io-button" routerLink="/campaign/about">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+              Back
+            </button>
+          </div>
+          <div class="col-md-7">
+            <h5 class="edit-loyalty-text">Combine the terms relevant to your campaign !</h5>
+          </div>
+          <div class="col-md-3 text-end">
+            <button class="cssbuttons-io-button" routerLink="/campaign/review"> Next
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+       
+      <div class="progress">
+        <div class="progress-bar" style="width:0%" id="progressBar" #progressBar>{{percent}}%</div>
+      </div>
+
+   
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="inner-box">
+              <h5 class="text-campaign">Campaign Expiration Date</h5>
+              <div class="col-md-12">
+                <div class="checkbox-wrapper-33 main-box">
+                  <input class="datepicker-input" type="date" class="form-control date_picker" (change)="onDateSelected($event)" />
+                </div>
+
+                <h5 class="text-redeem mt-3">Customer Redemption Limit</h5>
+                <div class="checkbox-wrapper-33 main-box">
+                  <div class="checkbox-box">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__trigger visuallyhidden" id="onlyOnce"
+                        name="customerRedeemOnce" (change)="onOnlyOnceSelected()" />
+                      <span class="checkbox__symbol">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                          width="28px" class="icon-checkbox" aria-hidden="true">
+                          <path d="M4 14l8 7L24 7"></path>
+                        </svg>
+                      </span>
+                      <label for="onlyOnce">Only Once</label>
+                    </label>
+                  </div>
+
+                  <div class="checkbox-box mt-4">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__trigger visuallyhidden" id="smsCheckbox"
+                        name="customerRedeemMultiple" (change)="onMultipleTimesSelected()" />
+                      <span class="checkbox__symbol">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                          width="28px" class="icon-checkbox" aria-hidden="true">
+                          <path d="M4 14l8 7L24 7"></path>
+                        </svg>
+                      </span>
+                      <label for="emailCheckbox">Multiple Times</label>
+                    </label>
+                  </div>
+                </div>
+
+                <h5 class="text-redeem mt-3">Contact Number</h5>
+                <p>This information will be incorporated into your campaign's link, SMS & email</p>
+                <div class="checkbox-wrapper-33 main-box">
+                  <input class="number-input form-control" type="number" (input)="onNumberInput($event)" />
+
+
+                </div>
+
+
+                <label for="campaignDescription">
+                  <h5 class="text-terms">Terms and Conditions</h5>
+                </label>
+                <textarea class="form-control" id="campaignDescription" (input)="onTermsInput($event)"></textarea>
+
+
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="minimumPurchase"
+                          name="communicationMethod" (change)="onCheckboxChange('Minimum purchase required.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="minimumPurchase">Minimum purchase required.</label>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="offersClubbed"
+                          name="communicationMethod"
+                          (change)="onCheckboxChange('2 offers cannot be clubbed.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="offersClubbed">2 offers cannot be clubbed.</label>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="rewardRedeem"
+                          name="communicationMethod"
+                          (change)="onCheckboxChange('Rewards cannot be redeemed on public holidays.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="rewardRedeem">Rewards cannot be redeemed on public holidays.</label>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="rewardRedeemStore"
+                          name="communicationMethod"
+                          (change)="onCheckboxChange('Rewards can only be redeemed in-store.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="rewardRedeemStore">Rewards can only be redeemed in-store.</label>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="additionalTerms"
+                          name="communicationMethod" (change)="onCheckboxChange('Additional T&C apply.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="additionalTerms">Additional T&amp;C apply.</label>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="checkbox-wrapper-33 main-box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__trigger visuallyhidden" id="disagreements"
+                          name="communicationMethod"
+                          (change)="onCheckboxChange('In case of any disagreements, the merchant\'s decision is final.',  $event)">
+                        <span class="checkbox__symbol">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px"
+                            width="28px" class="icon-checkbox" aria-hidden="true">
+                            <path d="M4 14l8 7L24 7"></path>
+                          </svg>
+                        </span>
+                        <label for="disagreements">In case of any disagreements, the merchant's decision is
+                          final.</label>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-5">
+            <div class="card">
+
+              
+              <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+                <g transform="translate(-18.298844,-77.973964)">
+                  <path
+                  d="M 18.4416 78.1063 H 198.581 v 39.2886 c 0 0 -43.1067 -27.8252 -73.476 -19.6878 c -30.3693 8.13742 -46.8322 12.5487 -46.8322 12.5487 c 0 0 -32.7754 8.05972 -46.7353 0 C 17.578 102.196 18.4416 78.1063 18.4416 78.1063 Z">
+                  </path>
+                  <path
+                    d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z">
+                  </path>
+                </g>
+              </svg>
+              <div class="white-card">
+
+                <div class="terms-box">
+                  <ng-container *ngIf="onlyOnceSelected">
+                    <p>Unable to combine two offers.</p>
+                  </ng-container>
+                  <ng-container *ngIf="multipleTimesSelected">
+                    <p>No cash can be exchanged for a reward.</p>
+                  </ng-container>
+                  <p *ngIf="selectedDate">Expiration Date: {{ selectedDate }}</p>
+                  <ng-container *ngIf="selectedDate">
+                    <ng-container *ngFor="let line of getTermsLines()">
+                      <p>{{ line }}</p>
+                    </ng-container>
+                    <ul style="list-style-type: none;">
+                      <li *ngFor="let term of selectedTerms">
+                        <ng-container *ngIf="!term.includes('doubt')">{{ term }}</ng-container>
+                      </li>
+                    </ul>
+                    
+                  </ng-container>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>

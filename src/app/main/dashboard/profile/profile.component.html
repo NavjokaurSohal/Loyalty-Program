@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="main-body">
+    <div class="row gutters-sm">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="/assets/img/profile.jpg" alt="Admin" class="rounded-circle profile-image" width="150">
+              <div class="mt-3">
+                <h6>{{authService.getUserName()}}</h6>
+                <!-- <p class="text-secondary mb-1">komal987@gmail.com</p>
+                     <p class="text-muted font-size-sm">9876556787</p>
+                      -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Brand</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                {{profileData.brand_name}}
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Industry</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                {{profileData.business_sector}}
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Category</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                {{profileData.store_categories}}
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Stores</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                {{profileData.number_of_stores}}
+              </div>
+            </div>
+            <hr>
+            <div class="row" style="    margin-top: 77px;">
+              <div class="col-sm-3">
+                <h1 class="mb-0">Address</h1>
+              </div>
+
+            </div>
+
+            <div class="row" style="    margin-top: 37px;">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Street Address</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <div class="col-sm-9 text-secondary">
+                  {{profileData.street_address}}
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">State</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{profileData.state}}
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">City</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{profileData.city}}
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Pincode</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{profileData.pincode}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

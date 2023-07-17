@@ -1,0 +1,161 @@
+
+.btn-color{
+    background: #fff;
+    border: 1px solid #bdc9c9;
+  }
+  .loyalty-customers {
+    padding: 0.5rem;
+    margin: 0.5rem 0px 0.3rem 0px;
+    font-weight: 1000;
+  }
+  
+  .title {
+    color: #354545;
+    font-family: BasierCircleBold;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: bold;
+  }
+  
+  .loyalty-customers .head-actions {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+  
+  .loyalty-customers .head-actions .sb-input {
+    flex-grow: 1;
+    margin: 0;
+    max-width: 650px;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+  .sb-input {
+    max-width: 420px;
+    width: 100%;
+  }
+  /* .sb-button--secondary {
+    background: #fff;
+    border: 1px solid #bdc9c9;
+    color: #090909;
+  } */
+  .sb-input .input-parent {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    transition: all .3s ease;
+  }
+  
+  .sb-input .input-parent .input-row {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #bdc9c9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    padding: 8px 12px;
+  }
+  
+  .sb-input .input-parent .input-row input {
+    border: none;
+    color: #090909;
+    /* font-family: BasierCircle; */
+    font-size: 15px;
+    line-height: 20px;
+    outline: none;
+    width: 100%;
+  }
+  
+  .loyalty-customers .head-actions .custom-date-picker {
+    min-width: 282px;  
+      margin-top: 0.8rem;
+  }
+  
+  .loyalty-customers .head-actions .custom-date-picker .date-btn2 {
+    width: 100%;
+  }
+  .date-btn2 span, .date-btn3 span {
+    color: #354545;
+    /* font-family: BasierCircleSemiBold; */
+    /* font-size: 15px; */
+  }
+  
+  .loyalty-customers .head-actions .sb-button--secondary {
+    min-width: 175px;
+    margin-top: 0.8rem;
+  }
+  
+  .sb-button span {
+    /* font-family: BasierCircleMedium; */
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .sb-button .new-tag {
+    background: linear-gradient(157.35deg,#c4f2f4 14.72%,#9cffed);
+    border-radius: 10px;
+    color: #182020;
+    font-family: DmSansBold;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 4px 6px;
+  }
+  
+  .date-btn2, .date-btn3 {
+    background: #fff;
+    border: 1px solid #a8b4b4;
+    border-radius: 10px;
+    color: #a8b4b4;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .date-btn, .date-btn2, .date-btn3, .primary-btn {
+    align-items: center;
+    /* background-color: #354545; */
+    border: 1px solid #a8b4b4;
+    color: #fff;
+    display: flex;
+    font-family: PoppinsMedium;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 25px;
+  }
+  .sb-button--sm {
+    padding: 9px 12px;
+    border-radius: 12px;
+  
+  }
+  .sb-button {
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #bdc9c9;
+    color: #090909;
+  }
+  
+  .Recent-loyalty-activity{
+    /* margin: 0.3rem;
+    align-items: flex-start;
+    border-radius: 12px; */
+    /* min-height: 200px; */
+    height: 320px;
+    padding: 20px;
+    /* background-color: #f3f5f5; */
+    /* background-color: #f8fbfb;
+    border: 1px solid #bdc9c9;
+    border-radius: 10px; */
+  }
+  .insight-action-card h4 span {
+    color: #6938ef;
+    font-family: BasierCircleSemiBold;
+    margin: 0.5rem;
+  }
+  
+  

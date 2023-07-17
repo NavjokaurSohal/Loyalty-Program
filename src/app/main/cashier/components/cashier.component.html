@@ -1,0 +1,67 @@
+
+   
+   <div class="row">
+      <div class="col-md-2 img">
+         <img src="/assets/img/cash-bunny-1.gif" width="250" height="250">
+
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+
+         <div class="row inner-box m-t-0">
+            <h3 class="m-t-0">Customer receiving service</h3>
+            <div class="input-group">
+               <div class="form-outline">
+                  <input id="number-input" type="number" [(ngModel)]="phone_no" class="form-control me-3 number-inputs"
+                  (keyup)="fetchCustomerData()" />
+               </div>
+            </div>
+
+            <h3 class="m-t-0">Name</h3>
+            <div class="input-group">
+               <div class="form-outline">
+                  <input id="text-input" type="text" [(ngModel)]="name" class="form-control me-3 text-inputs" />
+               </div>
+            </div>
+
+       
+
+         <h3 class="m-t-0">Bill Amount</h3>
+         <div class="input-group">
+            <div class="form-outline">
+               <input id="bill-input" type="number" class="form-control" [(ngModel)]="bill" />
+            </div>
+         </div>
+
+         <h3 class="m-t-0">Available Points: {{ availablePoints > 0 ? availablePoints : '0' }}</h3>
+
+         <h3 class="m-t-0">Point to redeem</h3>
+         <div class="input-group">
+            <div class="form-outline">
+               <input id="points-input" type="number" class="form-control" [(ngModel)]="points_reedem" (ngModelChange)="onPointsChange()" />
+
+            </div>
+          </div>
+          <div *ngIf="points_reedem > Points" class="text-danger">
+            Points to redeem should always be less than the Available points         </div>
+
+         <h3 class="m-t-0">Bill Amount after discount</h3>
+         <div class="input-group">
+            <div class="form-outline">
+               <input id="discounted-bill-input" type="number" class="form-control" [value]="bill_after_discount" readonly />
+            </div>
+         </div>
+
+         <button type="submit" class="btn btn-primary btn-submit search-btn m-t-0"
+         (click)="onSubmit()">
+            Submit
+         </button>
+      </div>
+   </div>
+
+   <div class="col-md-2 img">
+      <img src="/assets/img/bunny-rotation-cash-1.gif" width="250" height="250">
+
+   </div>
+   
+   </div>
+
