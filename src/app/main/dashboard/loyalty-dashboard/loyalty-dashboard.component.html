@@ -1,23 +1,68 @@
 <div class="container">
 
 
-   <div class="perfHead">
+   <!-- <div class="perfHead">
       <div class="perfHead-content">
          <h3 class="sb-typography sb-typography--display-lg sb-typography--semibold">Your Credits Balance</h3>
          <button type="button" class="btn btn-primary" id="sidebarCollapse" data-bs-toggle="modal"
             data-bs-target="#welcomeLoyalty">View Details</button>
       </div>
-   </div>
+   </div> -->
 
-   <div class="overview-card">
-      <div class="row">
-         <div class="col-md-3">
+   <div class="overview-card mt-3">
+      <div class="overview-card-color">
+         <div class="row">
+            <div class="col-md-3">
+               <h3>76.44%</h3>
+               <h5 class="r-rate tags"
+                  data-gloss="The percentage of loyalty points converted into sales can be expressed as : (Points Redeemed / Points Issued) * 100 = Percentage of Loyalty Points Redeemed as Sales.">
+                  <u>Redeeming percentage</u>
+               </h5>
+            </div>
+            <div class="col-md-3">
+               <h3>6.66%</h3>
+               <h5 class="r-rate tags" data-gloss="The total number of points claimed by your customers.">
+                  <u>Cashback utilized</u>
+               </h5>
+            </div>
+            <div class="col-md-3">
+               <h3>8.45%</h3>
+               <h5 class="r-rate tags" data-gloss="The whole cashback issued to your customers.">
+                  <u>Cashback Granted</u>
+               </h5>
+            </div>
+            <div class="col-md-3">
+               <h3>₹ 300</h3>
+               <h5 class="r-rate tags"
+                  data-gloss="The average amount spent by customers after they redeem a loyalty reward.">
+                  <u>Revenue per Redemption Average</u>
+               </h5>
+            </div>
+         </div>
+         <!-- <div class="col-md-3">
             <div class="overview-card-color">
                <h3 class="card-h3">76.44%</h3>
                <h5 class="r-rate"
                   title="The total number of loyalty points converted into sales expressed as percentage. (Total points redeemed by customers/ total points issued to customers )*100">
                   <u>Redemption Rate</u>
                </h5>
+            </div>
+         </div> -->
+
+         <!-- <div class="col-md-3">
+            <div class="overview-card-color">
+             <div class="row">
+               <div class="col-md-3">
+                  <img src="/assets/img/iconRedeem.png">
+               </div>
+               <div class="col-md-9">
+                  <h3>76.44%</h3>
+                  <h5 class="r-rate"
+                     title="The total number of loyalty points converted into sales expressed as percentage. (Total points redeemed by customers/ total points issued to customers )*100">
+                     <u>Redemption Rate</u>
+                  </h5>
+               </div>
+             </div>
             </div>
          </div>
 
@@ -54,13 +99,13 @@
                   <u>Avg. Revenue / Redemption</u>
                </h5>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
 
    <div class="perfHead">
       <div class="perfHead-content">
-         <h3 class="sb-typography sb-typography--display-lg sb-typography--semibold">Your business at glance</h3>
+         <h3 class="sb-typography sb-typography--display-lg sb-typography--semibold">A quick overview of your business</h3>
       </div>
    </div>
 
@@ -68,29 +113,43 @@
       <div class="col-md-6">
          <div class="redeeming-customer">
             <div class="row">
-               <div class="col-md-8">
-                  <h3 class="r-rate"
-                     title="The customers with the highest Loyalty Rewards redemptions are listed here.">
-                     <u>Top Redeeming Customers</u>
+               <div class="col-md-4">
+                  <h3 class="r-rate tags"
+                     data-gloss="Displaying the customers who have redeemed the highest amount of Loyalty Rewards.">
+                     <u>Prime redeemers</u>
                   </h3>
 
-                  <h6>121233 - Test</h6> <br>
+                  <h6 class="prime-redeem">Test</h6> 
 
-                  <h6>121233 - Test</h6> <br>
+                  <h6 class="prime-redeem">Test</h6> 
 
-                  <h6>121233 - Test</h6>
+                  <h6 class="prime-redeem">Test</h6>
 
                </div>
                <div class="col-md-4">
-                  <u class="d-more">Discover More</u>
+                  <h3 class="r-rate tags"
+                     data-gloss="Presenting the contact number of top redeemers with the highest amount of redeemed Loyalty Rewards.">
+                     <u>Contact line</u>
+                  </h3>
+
+                  <h6 class="prime-redeem">9876543210</h6> 
+
+                  <h6 class="prime-redeem">9876543210</h6> 
+
+                  <h6 class="prime-redeem">9876543210</h6>
+
+               </div>
+               <div class="col-md-4">
+                  <h3>
+                  <u class="d-more">Find out more</u></h3>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeemed">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeem">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeemed">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                </div>
             </div>
@@ -103,8 +162,8 @@
             <div class="row">
                <div class="col-md-8">
 
-                  <h3 class="r-rate" title="The total cashback issued to your customers.">
-                     <u>Cashback Redemption Slabs</u>
+                  <h3 class="r-rate tags" data-gloss="Total amount of cashback allocated to your customers.">
+                     <u>Cashback Redemption</u>
                   </h3>
 
                   <h6>Below ₹ 100 </h6> <br>
@@ -115,76 +174,61 @@
 
                   <h6>Above ₹500 </h6>
                </div>
-               <div class="col-md-4">
-                  <!-- <input type="range" class="form-range range-mt-0" id="Range"> <br>
-                  <input type="range" class="form-range range-mt-0" id="Range"> <br>
-                  <input type="range" class="form-range range-mt-0" id="Range"> <br>
-                  <input type="range" class="form-range range-mt-0" id="Range"> <br> -->
-               </div>
+               <!-- <div class="col-md-4 range-0">
+                  <h3 class="r-rate" title="The total cashback issued to your customers.">
+                     <u>Range</u>
+                  </h3>
+                  <input type="range" class="mt-1" id="Range"> <br>
+                  <input type="range" class="mt-4" id="Range"> <br>
+                  <input type="range" class="mt-4" id="Range"> <br>
+                  <input type="range" class="mt-4" id="Range"> <br>
+
+               </div> -->
             </div>
          </div>
       </div>
    </div>
 
-
-   <div class="row mt-3">
-      <div class="col-md-6">
-         <h3>Customer Frequency</h3>
-         <div class="RR-Time">
-            <div class="row">
-
-               <div class="col-md-1">
-                  <img src="/assets/img/clock-emoji.svg" class="clock-img" alt="Image" width="100%" height="100%">
-               </div>
-               <div class="col-md-11">
-                  <h4>Best time of your reward redemption is <span>Thursday Night, Leading</span> with <span>2
-                        redemptions.</span> </h4>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="col-md-6">
-         <h3>Top rewards redeemed </h3>
-         <div class="RR-Time-afternoon">
-            <div class="row">
-               <div class="col-md-1">
-                  <img src="/assets/img/clock-emoji.svg" class="clock-img" alt="Image" width="100%" height="100%">
-               </div>
-               <div class="col-md-11">
-                  <h4>Unpopular time of your reward redemption is <span>Wednesday Afternoon,</span> Only <span>1
-                        redemptions.</span> </h4>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
+   
 
    <div class="row mt-3">
       <div class="col-md-6">
          <div class="redeeming-customer">
             <div class="row">
-               <div class="col-md-8">
-                  <h3 class="r-rate"
-                     title="The customers with the highest Loyalty Rewards redemptions are listed here.">
+               <div class="col-md-4">
+                  <h3 class="r-rate tags"
+                     data-gloss="The top customers in terms of Loyalty Rewards redemptions are listed here.">
                      <u>Loyalty</u>
                   </h3>
-                  <h6>121233 - Test</h6> <br>
-                  <h6>121233 - Test</h6> <br>
-                  <h6>121233 - Test</h6>
+                  <h6>Test</h6> <br>
+                  <h6>Test</h6> <br>
+                  <h6>Test</h6>
 
                </div>
                <div class="col-md-4">
-                  <u class="d-more">Discover More</u>
+                  <h3 class="r-rate tags"
+                     data-gloss="Presenting the contact number of top redeemers with the highest amount of redeemed Loyalty Rewards.">
+                     <u>Contact line</u>
+                  </h3>
+
+                  <h6 class="prime-redeem">9876543210</h6> 
+
+                  <h6 class="prime-redeem">9876543210</h6> 
+
+                  <h6 class="prime-redeem">9876543210</h6>
+
+               </div>
+               <div class="col-md-4">
+                  <h3>
+                  <u class="d-more">Find out more</u></h3>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeemed">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeem">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                   <div class="customer">
-                     <div class="redeemed">⚡ Redeemed <b>2 times</b></div>
+                     <div class="redeemed">Redeemed <b style="color: #dd990a;">2 times</b></div>
                   </div>
                </div>
             </div>
@@ -196,7 +240,7 @@
          <div class="redeeming-customer">
             <div class="row">
                <div class="col-md-8">
-                  <h3 class="r-rate" title="The total cashback issued to your customers.">
+                  <h3 class="r-rate">
                      <u>Campaign</u>
                   </h3>
                   <h6>Below ₹ 100 </h6> <br>
@@ -213,7 +257,43 @@
             </div>
          </div>
       </div>
+   </div> 
+
+   <div class="row mt-3">
+      <div class="col-md-6">
+         <h3>Frequency of customer interactions</h3>
+         <div class="RR-Time">
+            <div class="row" style="display: flex; justify-content: center;">
+               <div class="col-md-1">
+                  <img src="/assets/img/clock-icon.png" class="clock-img" alt="Image">
+               </div> 
+               <div class="col-md-12" style="display: flex; justify-content: center;">
+                <b><span> Prime time: </span></b>  <h5>  <br> Thursday night, 2 redemptions.</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6">
+         <h3>Most redeemed rewards </h3>
+         <div class="RR-Time">
+            <div class="row" style="display: flex; justify-content: center;">
+               <div class="col-md-1">
+                  <img src="/assets/img/clock-icon.png" class="clock-img" alt="Image">
+               </div>
+               <div class="col-md-12" style="display: flex; justify-content: center;">
+                  <b><span> Wednesday Afternoon: </span></b>  <h5>  <br> Unfavorable for 1 Redemption.</h5>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
+
+
+   <!--
+
+
+  -->
 </div>
 
 <div class="modal fade P-card-set" id="welcomeLoyalty" tabindex="-1" aria-labelledby="exampleModalLabel"

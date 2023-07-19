@@ -17,6 +17,7 @@ export class loyaltyPerformanceComponent implements OnInit {
   loading: boolean;
   toastr: any;
   public FullName: any;
+  loyaltyCreated: boolean = false;
 
   constructor(@Inject(DOCUMENT)
   private document: Document,

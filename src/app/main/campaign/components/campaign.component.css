@@ -13,7 +13,7 @@
   }
   
   .campaign-title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: black;
     margin-top: 0.6rem;
@@ -54,6 +54,8 @@
     height: 25rem;
     display: block;
     border-radius: 20px;
+    margin-bottom:30px;
+    object-fit: cover;
 }
 .overlay-content {
   position: absolute;
